@@ -5,12 +5,16 @@
     font-family: Arial, sans-serif;
 }
 
-body {
-    background: #0f172a;
-    color: white;
+html {
     scroll-behavior: smooth;
 }
 
+body {
+    background: #0f172a;
+    color: white;
+}
+
+/* HEADER */
 header {
     text-align: center;
     padding: 40px;
@@ -26,6 +30,11 @@ header p {
     color: #94a3b8;
 }
 
+.header-buttons {
+    margin-top: 15px;
+}
+
+/* NAV */
 nav {
     text-align: center;
     background: #020617;
@@ -36,10 +45,18 @@ nav a {
     margin: 0 15px;
     color: white;
     text-decoration: none;
+    transition: 0.3s;
 }
 
+nav a:hover {
+    color: #38bdf8;
+    border-bottom: 2px solid #38bdf8;
+}
+
+/* SECTIONS */
 section {
     padding: 40px;
+    animation: fadeIn 1s ease;
 }
 
 h2 {
@@ -47,18 +64,21 @@ h2 {
     color: #38bdf8;
 }
 
+/* CARDS */
 .card {
     background: #1e293b;
     padding: 20px;
-    margin: 10px 0;
-    border-radius: 10px;
-    transition: 0.3s;
+    margin: 15px 0;
+    border-radius: 12px;
+    transition: all 0.3s ease;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
+/* SKILLS */
 .skills span {
     display: inline-block;
     background: #38bdf8;
@@ -68,16 +88,46 @@ h2 {
     border-radius: 5px;
 }
 
+/* BUTTON */
 button {
     padding: 10px 20px;
     background: #38bdf8;
     border: none;
     cursor: pointer;
-    margin-top: 10px;
+    margin: 5px;
 }
 
+/* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
     background: #020617;
+}
+
+/* TEXT */
+.highlight {
+    margin-top: 10px;
+    color: #cbd5f5;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 20px;
+    }
 }

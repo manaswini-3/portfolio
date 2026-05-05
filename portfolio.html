@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sali Manaswini | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background: #1e293b;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-top: 10px;
+    color: #94a3b8;
+}
+
+nav {
+    text-align: center;
+    background: #020617;
+    padding: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.skills span {
+    display: inline-block;
+    background: #38bdf8;
+    color: black;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #38bdf8;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Sali Manaswini</h1>
+    <p>Web Developer | Data Analytics Enthusiast</p>
+    <button onclick="toggleDarkMode()">Toggle Theme</button>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    </nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Computer Science Engineering student with a strong interest in Web Development and Data Analytics. Proficient in 
+building responsive web applications using modern technologies. Skilled in data analysis using tools like Excel and SQL to 
+extract, clean, and interpret data for meaningful insights. Familiar with data visualization and problem-solving techniques 
+to support decision-making. Possess strong leadership qualities with the ability to manage tasks, collaborate in teams, 
+and take initiative. Eager to apply technical and analytical skills in real-world projects and continuously learn emerging 
+technologies.
+    </p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Time Travel UI – Evolution of Web Design</h3>
+        <p>This project is an interactive web application where users can “travel through time” (1990 → 2050) and see how website design changes across different eras.</p>
+    </div>
+
+    <div class="card">
+        <h3>Credit Risk Analysis & Predictive Modeling </h3>
+        <p>Built a credit risk prediction model using financial data and logistic regression to identify delinquency patterns and support data-driven decision making.</p>
+    </div>
+
+    
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>SQL</span>
+        <span>Excel</span>
+        <span>Python</span>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Phone No: 6303736619 </P> 
+    <p>Email: manaswini.iu@gmail.com</p>
+    <p>GitHub:https://github.com/manaswini-3 </p>
+</section>
+<footer>
+    <p>© 2026 Sali Manaswini</p>
+</footer>
+
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("light");
+    
+    if (document.body.classList.contains("light")) {
+        document.body.style.background = "#f4f4f4";
+        document.body.style.color = "black";
+    } else {
+        document.body.style.background = "#0f172a";
+        document.body.style.color = "white";
+    }
+}
+</script>
+
+</body>
+</html>
